@@ -1,0 +1,11 @@
+[33mcommit 8de06f629165ed9543e712dde1d8a3543887d4c1[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/feature[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mfeature1[m[33m)[m
+Author: texaschoco <84299172+texaschoco@users.noreply.github.com>
+Date:   Tue Sep 28 10:05:48 2021 +0900
+
+    Rename test.html to index.html
+
+[33mcommit 728d377b189594b6fa4ebb7a10d37be309aadfce[m
+Author: texaschoco <84299172+texaschoco@users.noreply.github.com>
+Date:   Tue Sep 28 09:56:23 2021 +0900
+
+    first commit
