@@ -11,7 +11,7 @@ export default {
   },
 
   router:{
-    base:'/amplify-webapp/'
+    base:'/amplify-webapp'
   },
   generate: {
     dir: 'dist'
