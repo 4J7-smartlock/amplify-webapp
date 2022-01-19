@@ -11,10 +11,10 @@ export default {
   },
 
   router:{
-    base:'/amplify-wsbapp/'
+    base:'/amplify-webapp/'
   },
   generate: {
-    dir: 'docs'
+    dir: 'dist'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
