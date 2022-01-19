@@ -11,7 +11,7 @@ export default {
   },
 
   router:{
-    base:'/4J7-smartlock/amplify-webapp/'
+    base:'/amplify-webapp/'
   },
   generate: {
     dir: 'dist'
@@ -31,7 +31,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '4J7-smartlock/amplify-webapp/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/amplify-webapp/favicon.ico' }
     ],
   },
 
