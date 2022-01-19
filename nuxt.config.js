@@ -8,6 +8,13 @@ export default {
     host:'0.0.0.0'
   },
 
+  router:{
+    base:'/4J7-smartlock/amplify-wsbapp/'
+  },
+  generate: {
+    dir: 'docs'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - SEZYOU',
@@ -78,7 +85,5 @@ export default {
   build: {
   },
 
-  router:{
-    base:'/amplify-wsbapp/'
-  },
+  
 }
