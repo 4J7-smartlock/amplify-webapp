@@ -18,6 +18,7 @@
         </v-col>
         
         <v-col cols="6">
+        <div v-if="items"> 
         <div v-if= " items[0]['lock_status'] == 'open'">
           <v-card
             color="#00FF7F"
@@ -40,9 +41,11 @@
           </v-card-text>
           </v-card>
         </div>
+        </div>
         </v-col>
 
         <v-col cols="6">
+        <div v-if="items"> 
         <div v-if= " items[0]['lock_status'] == 'open'">
           <v-card
             color="#00FF7F"
@@ -65,9 +68,11 @@
           </v-card-text>
           </v-card>
         </div>
+        </div>
         </v-col>
 
         <v-col cols="6">
+        <div v-if="items"> 
         <div v-if= " items[0]['lock_status'] == 'open'">
           <v-card
             color="#00FF7F"
@@ -90,9 +95,11 @@
           </v-card-text>
           </v-card>
         </div>
+        </div>
         </v-col>
 
         <v-col cols="6">
+        <div v-if="items"> 
         <div v-if= " items[0]['lock_status'] == 'open'">
           <v-card
             color="#00FF7F"
@@ -115,9 +122,11 @@
           </v-card-text>
           </v-card>
         </div>
+        </div>
         </v-col>
 
         <v-col cols="6">
+        <div v-if="items"> 
         <div v-if= " items[0]['lock_status'] == 'open'">
           <v-card
             color="#00FF7F"
@@ -140,9 +149,11 @@
           </v-card-text>
           </v-card>
         </div>
+        </div>
         </v-col>
 
         <v-col cols="6">
+        <div v-if="items"> 
         <div v-if= " items[0]['lock_status'] == 'open'">
           <v-card
             color="#00FF7F"
@@ -164,6 +175,7 @@
              <v-icon center size="50">mdi-lock</v-icon>
           </v-card-text>
           </v-card>
+        </div>
         </div>
         </v-col>
         
