@@ -11,7 +11,7 @@ export default {
   },
 
   router:{
-    base:'/amplify-webapp/'
+    base:'/4J7-smartlock/amplify-webapp/'
   },
   generate: {
     dir: 'dist'
