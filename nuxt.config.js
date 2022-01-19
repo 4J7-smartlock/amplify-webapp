@@ -22,7 +22,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/amplify-webapp/favicon.ico' }
     ],
   },
 
@@ -79,9 +79,6 @@ export default {
   },
 
   router:{
-    base:"/amplify-wsbapp/"
-  },
-  generate:{
-    dir: 'docs'
+    base:'/amplify-wsbapp/'
   },
 }
