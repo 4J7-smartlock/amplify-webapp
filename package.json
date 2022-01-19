@@ -24,6 +24,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^27.0.5",
     "jest": "^27.0.5",
+    "push-dir": "^0.4.1",
     "vue-jest": "^3.0.4"
   }
 }
