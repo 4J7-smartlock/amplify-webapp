@@ -8,7 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "test": "jest",
-    "deploy": "push-dir --dir=dist --branch=next --cleanup"
+    "deploy": "push-dir --dir=dist --branch=release --cleanup"
   },
   "dependencies": {
     "@nuxtjs/auth": "^4.9.1",
