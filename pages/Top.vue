@@ -18,36 +18,28 @@
         </v-col>
 
         <v-col cols="6">
+        <div v-if= " items[1]['lock_status'] == 'open'">
           <v-card
-            color="#ff0000"
-          　dark>
-          <v-card-title>第一体育館</v-card-title>
-          <v-card-text>
-           <v-icon center size="50">mdi-lock</v-icon>
-          </v-card-text>
+           color="#00FF7F"
+           height="160"
+           light> 
+           <v-card-title>武道館 </v-card-title>
+           <v-card-text>
+             <v-icon mx-auto size="50">mdi-lock-open</v-icon>
+           </v-card-text>
           </v-card>
-        </v-col>
-
-        <v-col cols="6">
+        </div>
+        <div v-else>
           <v-card
-            color="#ff0000"
-          　dark>
-          <v-card-title>第二体育館</v-card-title>
-          <v-card-text>
-             <v-icon center size="50">mdi-lock</v-icon>
-          </v-card-text>
+           color="#ff4500"
+           height="160"
+           dark> 
+           <v-card-title>武道館 </v-card-title>
+           <v-card-text>
+             <v-icon mx-auto size="50">mdi-lock</v-icon>
+           </v-card-text>
           </v-card>
-        </v-col>
-
-        <v-col cols="6">
-          <v-card
-            color="#ff0000"
-          　dark>
-          <v-card-title>武道館</v-card-title>
-          <v-card-text>
-             <v-icon center size="50">mdi-lock</v-icon>
-          </v-card-text>
-          </v-card>
+        </div>
         </v-col>
 
         <v-col cols="12">
@@ -64,7 +56,7 @@
 
         <v-col cols="6">
           <v-card
-            color="#ff0000"
+            color="#ff4500"
           　dark>
           <v-card-title>武道館</v-card-title>
           <v-card-text>
@@ -94,7 +86,7 @@
               <v-card-title>
                 補足
               </v-card-title>
-              <v-card-text>・専攻科棟3F・4F・5Fはクラス教室しかないため<br>表示していない。<v-spacer></v-spacer><br>・スマホ向けのWebアプリである。
+              <v-card-text>・専攻科棟3F・4F・5Fはクラス教室しかないため<br>表示していない。<v-spacer></v-spacer><br>・スマホ向けのWebアプリである。<v-spacer></v-spacer><br>・設置していない場所は施錠表示。
 
               </v-card-text>
             </v-card>
@@ -105,15 +97,34 @@
   </v-card>
 </template>
 
-<style>
-
-p.map1 img{
-  width: 400px;
-}
-</style>
-
 <script>
-  export default {
-  }
+import axios from 'axios';
+ 
+export default {
+ 
+  data() {
+    return {
+      items:null,
+    }
+  },
+ 
+  async mounted() {
+    await this.getData();
+  },
+ 
+  methods:{
+    getData: async function(){
+      const result = await axios(
+          {
+          method:'GET',// GET,POSTなど
+          url:'https://b2q74etkx0.execute-api.us-east-2.amazonaws.com/slfuncapi/dynamodbctrl',// APIのURL
+          headers:{
+            'X-Api-Key':'hx8xubEGea1RYMPawUvfC5pfMgNUefRaaUgVPoym'
+          }
+          },
+          ).then(response => this.items = response.data);
+    }
+  },
   
+}
 </script>
