@@ -20,7 +20,7 @@
         
         <v-col cols="6">
         <div v-if="items"> 
-        <div v-if= " items[0]['lock_status'] == 'open'">
+        <div v-if= " items[1]['lock_status'] == 'open'">
           <v-card
             color="#00FF7F"
             height="160"
@@ -49,7 +49,7 @@
         
         <v-col cols="6">
         <div v-if="items"> 
-        <div v-if= "items[0]['lock_status'] == 'open'">
+        <div v-if= "items[1]['lock_status'] == 'open'">
           <v-card
            color="#00FF7F"
            height="160"
@@ -78,7 +78,7 @@
 
         <v-col cols="6">
         <div v-if="items"> 
-        <div v-if= " items[0]['lock_status'] == 'open'">
+        <div v-if= " items[1]['lock_status'] == 'open'">
           <v-card
            color="#00FF7F"
            height="160"
@@ -105,7 +105,7 @@
         
         <v-col cols="6">
         <div v-if="items"> 
-        <div v-if= " items[0]['lock_status'] == 'open'">
+        <div v-if= " items[1]['lock_status'] == 'open'">
           <v-card
            color="#00FF7F"
            height="160"
@@ -132,7 +132,7 @@
 
         <v-col cols="6">
         <div v-if="items"> 
-        <div v-if= " items[0]['lock_status'] == 'open'">
+        <div v-if= " items[1]['lock_status'] == 'open'">
           <v-card
            color="#00FF7F"
            height="160"
@@ -159,7 +159,7 @@
 
         <v-col cols="6">
         <div v-if="items"> 
-        <div v-if= " items[0]['lock_status'] == 'open'">
+        <div v-if= " items[1]['lock_status'] == 'open'">
           <v-card
            color="#00FF7F"
            height="160"

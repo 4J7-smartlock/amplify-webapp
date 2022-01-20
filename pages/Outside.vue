@@ -19,7 +19,7 @@
         
         <v-col cols="6">
         <div v-if="items"> 
-        <div v-if= " items[0]['lock_status'] == 'open'">
+        <div v-if= " items[1]['lock_status'] == 'open'">
           <v-card
             color="#00FF7F"
             height="160"
@@ -48,7 +48,7 @@
         
         <v-col cols="6">
         <div v-if="items"> 
-        <div v-if= "items[0]['lock_status'] == 'open'">
+        <div v-if= "items[1]['lock_status'] == 'open'">
           <v-card
            color="#00FF7F"
            height="160"
@@ -65,6 +65,60 @@
            height="160"
            dark> 
            <v-card-title>第二体育館 </v-card-title>
+           <v-card-text>
+             <v-icon mx-auto size="50">mdi-lock</v-icon>
+           </v-card-text>
+          </v-card>
+        </div>
+        </div>
+        </v-col>
+        
+        <v-col cols="6">
+        <div v-if="items"> 
+        <div v-if= " items[0]['lock_status'] == 'open'">
+          <v-card
+           color="#00FF7F"
+           height="160"
+           light> 
+           <v-card-title>武道館 </v-card-title>
+           <v-card-text>
+             <v-icon mx-auto size="50">mdi-lock-open</v-icon>
+           </v-card-text>
+          </v-card>
+        </div>
+        <div v-else>
+          <v-card
+           color="#ff4500"
+           height="160"
+           dark> 
+           <v-card-title>武道館 </v-card-title>
+           <v-card-text>
+             <v-icon mx-auto size="50">mdi-lock</v-icon>
+           </v-card-text>
+          </v-card>
+        </div>
+        </div>
+        </v-col>
+
+        <v-col cols="6">
+        <div v-if="items"> 
+        <div v-if= " items[1]['lock_status'] == 'open'">
+          <v-card
+           color="#00FF7F"
+           height="160"
+           light> 
+           <v-card-title>図書館 </v-card-title>
+           <v-card-text>
+             <v-icon mx-auto size="50">mdi-lock-open</v-icon>
+           </v-card-text>
+          </v-card>
+        </div>
+        <div v-else>
+          <v-card
+           color="#ff4500"
+           height="160"
+           dark> 
+           <v-card-title>図書館 </v-card-title>
            <v-card-text>
              <v-icon mx-auto size="50">mdi-lock</v-icon>
            </v-card-text>
@@ -80,60 +134,6 @@
            color="#00FF7F"
            height="160"
            light> 
-           <v-card-title>武道館 </v-card-title>
-           <v-card-text>
-             <v-icon mx-auto size="50">mdi-lock-open</v-icon>
-           </v-card-text>
-          </v-card>
-        </div>
-        <div v-else>
-          <v-card
-           color="#ff4500"
-           height="160"
-           dark> 
-           <v-card-title>武道館 </v-card-title>
-           <v-card-text>
-             <v-icon mx-auto size="50">mdi-lock</v-icon>
-           </v-card-text>
-          </v-card>
-        </div>
-        </div>
-        </v-col>
-
-        <v-col cols="6">
-        <div v-if="items"> 
-        <div v-if= " items[0]['lock_status'] == 'open'">
-          <v-card
-           color="#00FF7F"
-           height="160"
-           light> 
-           <v-card-title>図書館 </v-card-title>
-           <v-card-text>
-             <v-icon mx-auto size="50">mdi-lock-open</v-icon>
-           </v-card-text>
-          </v-card>
-        </div>
-        <div v-else>
-          <v-card
-           color="#ff4500"
-           height="160"
-           dark> 
-           <v-card-title>図書館 </v-card-title>
-           <v-card-text>
-             <v-icon mx-auto size="50">mdi-lock</v-icon>
-           </v-card-text>
-          </v-card>
-        </div>
-        </div>
-        </v-col>
-        
-        <v-col cols="6">
-        <div v-if="items"> 
-        <div v-if= " items[0]['lock_status'] == 'open'">
-          <v-card
-           color="#00FF7F"
-           height="160"
-           light> 
            <v-card-title>機械実習工場 </v-card-title>
            <v-card-text>
              <v-icon mx-auto size="50">mdi-lock-open</v-icon>
@@ -156,7 +156,7 @@
 
         <v-col cols="6">
         <div v-if="items"> 
-        <div v-if= " items[0]['lock_status'] == 'open'">
+        <div v-if= " items[1]['lock_status'] == 'open'">
           <v-card
            color="#00FF7F"
            height="160"
@@ -183,7 +183,7 @@
 
         <v-col cols="6">
         <div v-if="items"> 
-        <div v-if= " items[0]['lock_status'] == 'open'">
+        <div v-if= " items[1]['lock_status'] == 'open'">
           <v-card
            color="#00FF7F"
            height="160"
@@ -210,7 +210,7 @@
 
         <v-col cols="6">
         <div v-if="items"> 
-        <div v-if= " items[0]['lock_status'] == 'open'">
+        <div v-if= " items[1]['lock_status'] == 'open'">
           <v-card
            color="#00FF7F"
            height="160"
