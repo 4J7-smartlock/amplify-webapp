@@ -10,7 +10,8 @@ export default {
     base:'/amplify-webapp/'
   },
   generate: {
-    dir: 'dist'
+    dir: 'dist',
+    fallback:'404.html'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
