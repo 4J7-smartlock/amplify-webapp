@@ -27,19 +27,6 @@
           </v-card>
         </v-col>
 
-        <v-col cols="12">
-          <v-card
-            color="#406882"
-            dark>
-            <v-card-title class="text-h5">
-              管理・教育棟1F
-            </v-card-title>
-            <v-spacer></v-spacer>
-            <v-card-subtitle></v-card-subtitle>
-            <v-card-text></v-card-text>
-          </v-card>
-        </v-col>
-
      </v-row>
     </v-container>
   </v-card>
