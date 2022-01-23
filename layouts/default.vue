@@ -69,13 +69,7 @@ export default {
 div{
   white-space: pre-line;
 }
-.bg{
-  background-image: url("~@/assets/email-pattern.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-}
+
 .grey{
   color:dimgrey;
 }
