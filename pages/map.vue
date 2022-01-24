@@ -20,7 +20,7 @@
         <v-col cols="12">
           <v-card 
           color="#E4F9F5">
-               <v-img :src="require('@/assets/ichinoseki-kosen.jpg')"
+               <v-img :src="require('@/assets/map.jpg')"
                height="auto"
                width="auto">
                </v-img>
